@@ -12,6 +12,13 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "lint": "prettier --check .",
+    "write": "prettier --write ."
+  },
+  "devDependencies": {
+    "eslint": "8.10.0",
+    "eslint-config-next": "12.1.0",
+    "prettier": "^2.5.1"
   }
 }

@@ -1,9 +1,13 @@
+import Head from "next/head";
 import Main from "../components/Main/Main";
 
 function Home() {
   return (
     <>
-        <Main />
+      <Head>
+        <title>Home</title>
+      </Head>
+      <Main />
     </>
   );
 }
