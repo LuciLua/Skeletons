@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import SkeletonArticle from "../../Skeletons/SkeletonArticle";
 import styles from "./articles.module.scss";
 
 function Articles() {
@@ -16,6 +17,7 @@ function Articles() {
     <div className={styles.articles}>
       <h1>Articles</h1>
       <hr />
+
       {articles &&
         articles.map((article) => (
           <div className={styles.article} key={article.id}>
@@ -23,7 +25,8 @@ function Articles() {
             <p>{article.body}</p>
           </div>
         ))}
-      {!articles && <div>Loading...</div>}
+
+      {!articles && [1, 2, 3, 4, 5].map((n) => <SkeletonArticle key={n} />)}
     </div>
   );
 }
