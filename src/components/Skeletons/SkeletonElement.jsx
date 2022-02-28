@@ -1,12 +1,9 @@
 import React from "react";
 
 const SkeletonElement = ({ type }) => {
+  const classes = `skeleton ${type}`;
 
-    const classes = `skeleton ${type}`;
-
-    return(
-        <div className={classes}></div>
-    )
-}
+  return <div className={classes}></div>;
+};
 
 export default SkeletonElement;

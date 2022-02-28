@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import SkeletonProfile from "../../Skeletons/SkeletonProfile";
 import styles from "./user.module.scss";
 
 function User() {
@@ -37,8 +38,7 @@ function User() {
         </div>
       )}
 
-        {!profile && <div>Loading...</div>}
-
+      {!profile && <SkeletonProfile />}
     </div>
   );
 }
