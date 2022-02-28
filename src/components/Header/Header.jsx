@@ -4,7 +4,7 @@ function Header(props) {
   return (
     <>
       <header className={styles.header}>
-        <h1>Header here!</h1>
+        <h1>Skeletons</h1>
       </header>
     </>
   );
